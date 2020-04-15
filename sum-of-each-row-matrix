@@ -1,0 +1,10 @@
+def rowsum(A):
+    n, m = A.shape
+    rs = np.zeros(n)
+    for i in range (0, n):
+        for j in range(0, m):
+            rs[i] = rs[i] + A[i, j]
+    return rs
+# Test:
+A=np.array([[11,22], [33,44], [55,66]])
+print(rowsum(A))
